@@ -156,6 +156,7 @@ const resolveCollisions = (depthTree: any[], height: number, nodePadding: number
     nodes.sort(ascendingY);
 
     let y0 = 0;
+    if (i % 2 === 1) y0 = 250;
     for (let j = 0; j < n; j++) {
       const node = nodes[j];
       const dy = y0 - node.y;
